@@ -18,6 +18,7 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 100px;
+    transition: 0.6s;
 }
 
 .topnav {
@@ -49,6 +50,7 @@ body {
     background-color: #fff;
     margin-top: 20px;
     padding: 15px;
+    text-align: center;
 }
 
 .card img {
@@ -77,10 +79,9 @@ body {
 }
 
 .imgabout {
-    width: 200px;
-    height: 200px;
     margin: 0 auto;
     filter: grayscale(100%);
+    transition: 0.5s;
 }
 
 .footer {
@@ -99,9 +100,47 @@ body {
 }
 
 @media screen and (max-width:1000px) {
-    .leftcol ,.rightrcol {
+
+    .leftcol,
+    .rightrcol {
         width: 100%;
         padding: 0;
         text-align: center;
     }
+}
+
+.imgchecklist {
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+
+.imgchecklist:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.rightrcol .card p {
+    font-size: 14px;
+}
+.imgabout:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+.header div img:hover{
+    border-radius: 100px 100px 0px 100px;
+}
+.tryit{
+    background-color: #000;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.tryit a{
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 30px;
+    display: inline;
 }
