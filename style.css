@@ -54,7 +54,7 @@ body {
 }
 
 .card img {
-    height: 200px;
+    height: 180px;
     width: 70%;
 }
 
@@ -79,6 +79,8 @@ body {
 }
 
 .imgabout {
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
     filter: grayscale(100%);
     transition: 0.5s;
@@ -106,6 +108,16 @@ body {
         width: 100%;
         padding: 0;
         text-align: center;
+    }
+
+    .card .imgmywebsite {
+        height: 70px;
+        width: 70%;
+    }
+
+    .card .imgabout {
+        height: 250px;
+        width: 250px;
     }
 }
 
