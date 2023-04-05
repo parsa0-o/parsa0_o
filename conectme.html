@@ -8,36 +8,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reza anbarsooz</title>
     <style>
-        h1 {
+        body {
+            /* box-sizing: content-box; */
+            padding: 10px;
+            font-family: Arial;
+            background-color: #f1f1f1;
             text-align: center;
-            margin-top: 200px;
         }
 
-        div {
-            width: 40%;
-            height: 50px;
-            background-color: #000;
-            margin: 0 auto;
-            border-radius: 50px;
+        .container {
+            max-width: 100%;
         }
 
-        a {
-            color: #fff;
+        .card {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            flex-wrap: wrap;
+            margin-bottom: 1.2rem;
+        }
+
+        .card a {
             text-decoration: none;
-            text-align: center;
-            display: block;
-            margin: 0 auto;
-            font-size: 37px;
+            color: #000;
+
+
+        }
+
+        .back {
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            margin-top: 3rem;
+            padding: .7rem 2rem;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>
-        This page is not finished yet
-    </h1>
-    <div><a href="index.html" target="_self">Back Home</a></div>
+    <div class="container">
+        <div class="card">
+            <h2>
+                <a href="https://github.com/rezaanbarsooz79/rezaanbarsooz79" target="_blank">Github</a>
+            </h2>
+        </div>
+        <div class="card">
+            <h2>
+                <a href="https://www.linkedin.com/in/reza-anbarsoz-86aa0726b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B99wld3yDQL%2BuwAwzmf6G7w%3D%3D"
+                    target="_blank">LinkedIn</a>
+            </h2>
+        </div>
+        <div class="card">
+            <h2>
+                <a href="mailto: reza.anbrsooz7979@gmail.com" target="_blank">Email</a>
+            </h2>
+        </div>
+        <div class="card">
+            <h2>
+                <a href="https://wa.link/ldh31n" target="_blank">Whatsapp</a>
+            </h2>
+        </div>
+        <div class="card">
+            <h2>
+                <a href="tel:09215019983" target="_blank">Number</a>
+            </h2>
+        </div>
+        <div class="card">
+            <h2>
+                <a href="https://t.me/https_rezaa" target="_blank">Telegram</a>
+            </h2>
+        </div>
+    </div>
+    <div><a href="index.html" class="back" target="_self">Back Home</a></div>
 
 </body>
 
