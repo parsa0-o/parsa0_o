@@ -8,36 +8,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>reza anbarsooz</title>
     <style>
-        h1 {
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px;
+            font-family: Arial;
+            background-color: #f1f1f1;
+        }
+
+        .card {
+            background-color: #fff;
+            margin-top: 20px;
+            padding: 15px;
             text-align: center;
-            margin-top: 200px;
         }
 
-        div {
-            width: 40%;
-            height: 50px;
-            background-color: #000;
-            margin: 0 auto;
-            border-radius: 50px;
+        .card img {
+            height: auto;
+            width: 80%;
         }
 
-        a {
-            color: #fff;
+        @media screen and (max-width:1000px) {
+            .card .imgmywebsite {
+                height: 70px;
+                width: 70%;
+            }
+
+            .card .imgabout {
+                height: 250px;
+                width: 250px;
+            }
+
+            .imgabout:hover {
+                filter: grayscale(0%);
+                transform: scale(1.05);
+            }
+
+            .imgchecklist:hover {
+                filter: grayscale(0%);
+                transform: scale(1.05);
+            }
+
+            .content-links {
+                background-color: #000;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 3rem;
+                padding: .5rem 6rem;
+                margin-bottom: 4rem;
+            }
+
+            .imgmywebsite {
+                transition: 0.5s;
+            }
+
+            .imgmywebsite:hover {
+                filter: grayscale(0%);
+                transform: scale(1.05);
+            }
+        }
+
+        .back {
+            background-color: #fff;
+            color: #000;
             text-decoration: none;
-            text-align: center;
-            display: block;
-            margin: 0 auto;
-            font-size: 37px;
+            margin-top: 1rem;
+            padding: .7rem 2rem;
+            border-radius: 1rem;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>
-        This page is not finished yet
-    </h1>
-    <div><a href="index.html" target="_self">Back Home</a></div>
+    <div class="leftcol">
+        <div class="card">
+            <h2>Website designed with Flexbox</h2>
+            <h5>this website create with flexbox </h5>
+            <img src="flexboxJPG.JPG" class="imgchecklist">
+            <p>This is a Sads project that I did while learning Flexbox and finally made it responsive
+            </p>
+            <div><a href="https://project-flexbox-reza.netlify.app/" class="content-links" target="_blank">visite it</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>checklist</h2>
+            <h5>The first small project I did was to meet my needs, so I decided to start this project</h5>
+            <img src="12.JPG" class="imgchecklist">
+            <p>Since I needed to write my work in a checklist and I am very interested in working with the computer, I
+                decided to make
+                a checklist and later I decided that it should be a web application that can be on my phone and on the
+                system.
+                After it
+                was made and I saw a lot of interest from people around me to use this web application, I decided to
+                make a
+                more
+                beautiful appearance for it, which took about a day, but in the end it was user-friendly, and now nearly
+                ten
+                of my close
+                friends are using it. They use the online checklist and I am satisfied. I am also satisfied and happy
+                with
+                this welcome</p>
+            <div class="tryit"><a href="https://checklistereza.netlify.app/" target="_blank" class="content-links">Try
+                    It</a></div>
+        </div>
+        <div class="card">
+            <h2>my wbesite</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <img src="14.JPG" class="imgmywebsite">
+            <p>Recently, in order to get myself more involved in coding and to create a resume and to have some work
+                samples, I decided
+                to create my own website or a blog and post content on it, both from my own work and from what the site
+                provides for
+                others. It will be useful because this will also make me code more and I can be daily and post my work
+                samples
+                here.</p>
+        </div>
+    </div>
+    <div><a href="index.html" class="back" target="_self">Back Home</a></div>
+
 
 </body>
 
