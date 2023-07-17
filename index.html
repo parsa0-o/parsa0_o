@@ -22,9 +22,9 @@
     <p>
       Hi Guys , Welcome To Wy Website , I'm programmer
     </p>
-    <p>I Working With Python , Dart , Flluter , C , C++ , SQL , Html , Css , Felx-box , Grid ,
-      Bootstrap
-      , Git ,
+    <p>I Working With Python , javascript , django , Dart , Flluter , C , C++ , SQL , Html , Css , Bootstrap
+      , Felx-box , Grid ,
+      Git ,
       Github</p>
   </div>
   <div class="topnav">
@@ -35,12 +35,72 @@
   <div class="row">
     <div class="leftcol">
       <div class="card">
+        <h2>Translator using API for Farsi to English</h2>
+        <img src="Translator-using-API-for-Farsi-to-English.JPG" class="imgchecklist">
+        <p>This code creates a click event for an element with the ID 'translate-btn'. When the user clicks on this
+          button, a
+          function is executed that assigns three initial variables using the document.querySelector method:
+
+          sourceLanguage: the source language (original text) entered in the element with the ID source-language.
+          targetLanguage:
+          the target language (translated text) entered in the element with the ID target-language. sourceText: the text
+          entered
+          by the user in the element with the ID source-text. Then, using the fetch() function, an inline request is
+          sent to the
+          Google Translate API. The API address is added to the request as follows:
+          https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sourceLanguage}&tl=${targetLanguage}&dt=t&q=${encodeURI(sourceText)}
+          This address allows you to translate the sourceText into the target language using sourceLanguage and
+          targetLanguage.
+          The response returned by the API for this request contains a three-dimensional array that includes the
+          translated text.
+          In this code, the translated text is displayed in the element with the ID target-text.
+
+          If you want to put this code on GitHub, you can create a file named translate.js in the js folder and include
+          the above
+          code in it. Then, in your HTML file, add the translate.
+        </p>
+        <div><a href="https://its-translate-for-reza-anbarsooz.netlify.app/" class="content-links"
+            target="_blank">visite this sit</a>
+        </div>
+      </div>
+      <div class="card">
         <h2>Website designed with Flexbox</h2>
         <h5>this website create with flexbox </h5>
         <img src="flexboxJPG.JPG" class="imgchecklist">
         <p>This is a Sads project that I did while learning Flexbox and finally made it responsive
         </p>
-        <div><a href="https://project-flexbox-reza.netlify.app/" class="content-links" target="_blank">visite it</a></div>
+        <div><a href="https://project-flexbox-reza.netlify.app/" class="content-links" target="_blank">visite it</a>
+        </div>
+      </div>
+      <div class="card">
+        <h2>remove silence from audio</h2>
+        <img src="remove_silence_from_audio.JPG" class="imgchecklist">
+        <p>This code defines a function called remove_silence that takes two file paths as input: input_file_path, which
+          is the
+          path to the audio file from which the silences will be removed, and output_file_path, which is the path where
+          the
+          resulting audio file will be saved.
+
+          The function first loads the audio file using the AudioSegment class from the pydub library. It then
+          calculates the
+          average dBFS level of the audio file and sets the silence threshold to this value.
+
+          The minimum silence length is calculated based on the length of the audio file and set to 5% of its total
+          duration. The
+          detect_nonsilent method from the pydub.silence module is used to split the audio into non-silent parts based
+          on the
+          silence threshold and minimum silence length.
+
+          Finally, the function concatenates the non-silent parts of the audio that are longer than the minimum silence
+          length
+          using the AudioSegment.empty() method and exports the resulting audio to the specified output file path in WAV
+          format
+          using the export method.
+
+          Overall, this code removes silences from an audio file and saves the remaining audio to a new file.
+        </p>
+        <div><a href="https://project-flexbox-reza.netlify.app/" class="content-links" target="_blank">visite it</a>
+        </div>
       </div>
       <div class="card">
         <h2>checklist</h2>
@@ -56,7 +116,8 @@
           of my close
           friends are using it. They use the online checklist and I am satisfied. I am also satisfied and happy with
           this welcome</p>
-        <div class="tryit"><a href="https://checklistereza.netlify.app/" target="_blank" class="content-links">Try It</a></div>
+        <div class="tryit"><a href="https://checklistereza.netlify.app/" target="_blank" class="content-links">Try
+            It</a></div>
       </div>
       <div class="card">
         <h2>my wbesite</h2>
@@ -109,14 +170,14 @@
         </h2>
       </div>
       <!-- <div class="card">
-        <div class="fackimage"></div>
-        <div class="fackimage"></div>
-        <div class="fackimage"></div>
-        <div class="fackimage"></div>
-      </div> -->
+                  <div class="fackimage"></div>
+                  <div class="fackimage"></div>
+                  <div class="fackimage"></div>
+                  <div class="fackimage"></div>
+                </div> -->
     </div>
   </div>
-</div>
+  </div>
 </body>
 <div class="footer">
   <h3>This world is beautiful if you act beautiful</h3>
