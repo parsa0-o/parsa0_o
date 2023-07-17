@@ -194,3 +194,8 @@ body {
     filter: grayscale(0%);
     transform: scale(1.05);
 }
+
+.present-video video {
+    height: auto;
+    width: 80%;
+}
