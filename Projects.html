@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="2020.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reza anbarsooz</title>
+    <style>
+        .back {
+            text-decoration: none;
+            position: fixed;
+           bottom: 20px;
+            left: 4%;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: .8rem;
+            padding: .5rem 3rem;
+        }
+        .leftcol {      
+            clear: left;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contianer">
+        <div class="leftcol">
+            <div class="card">
+                <h2>Translator using API for Farsi to English</h2>
+                <img src="Translator-using-API-for-Farsi-to-English.JPG" alt="اگه چیزی نمیاد بدون بخاطر سرور رایگانشه"
+                    class="imgchecklist">
+                <p>This code creates a click event for an element with the ID 'translate-btn'. When the user clicks on
+                    this
+                    button, a
+                    function is executed that assigns three initial variables using the document.querySelector method:
+
+                    sourceLanguage: the source language (original text) entered in the element with the ID
+                    source-language.
+                    targetLanguage:
+                    the target language (translated text) entered in the element with the ID target-language.
+                    sourceText:
+                    the
+                    text
+                    entered
+                    by the user in the element with the ID source-text. Then, using the fetch() function, an inline
+                    request
+                    is
+                    sent to the
+                    Google Translate API. The API address is added to the request as follows
+                    This address allows you to translate the sourceText into the target language using sourceLanguage
+                    and
+                    targetLanguage.
+                    The response returned by the API for this request contains a three-dimensional array that includes
+                    the
+                    translated text.
+                    In this code, the translated text is displayed in the element with the ID target-text.
+
+                    If you want to put this code on GitHub, you can create a file named translate.js in the js folder
+                    and
+                    include
+                    the above
+                    code in it. Then, in your HTML file, add the translate.
+                </p>
+                <div><a href="https://its-translate-for-reza-anbarsooz.netlify.app/" class="content-links"
+                        target="_blank">visite this site</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>My first backend project with Django</h2>
+                <h5>this website create with django,JavaScript,html,css</h5>
+                <img src="alishahi.JPG" class="imgchecklist"
+                    alt="اینجا جای ی عکس که بخاطر داشتن هاست رایگان هنوز لود نشده">
+                <p>This project primarily focuses on strengthening the backend and includes an admin panel for creating
+                    new
+                    posts or tables
+                    and assigning values. It also has an API, and each table has its own API that returns a JSON file
+                    upon
+                    request. This
+                    project utilizes HTML, CSS, and JavaScript. You can view this project on my GitHub.
+                </p>
+                <div><a href="https://github.com/rezaanbarsooz79/project-django" class="content-links"
+                        target="_blank">visite
+                        github</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Ostad Helmi's site</h2>
+                <h5>this website create with grid for master nona helmi </h5>
+                <article class="present-video">
+                    <video loop muted autoplay>
+                        <source src="20230717_223011.mp4" alt="اینجا جای ی عکس که بخاطر داشتن هاست رایگان هنوز لود نشده"
+                            type="video/mp4" />
+                    </video>
+                </article>
+                <p>This is a Sads project that I did while learning Flexbox and finally made it responsive
+                </p>
+                <div><a href="https://ostad-helmis-site-with-grid.netlify.app/" class="content-links"
+                        target="_blank">visite
+                        this site</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Website designed with Flexbox</h2>
+                <h5>this website create with flexbox </h5>
+                <img src="flexboxJPG.JPG" alt="اینجا جای ی عکس که بخاطر داشتن هاست رایگان هنوز لود نشده"
+                    class="imgchecklist">
+                <p>This is a Sads project that I did while learning Flexbox and finally made it responsive
+                </p>
+                <div><a href="https://project-flexbox-reza.netlify.app/" class="content-links" target="_blank">visite
+                        this
+                        site</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>remove silence from audio</h2>
+                <img src="remove_silence_from_audio.JPG" alt="اینجا جای ی عکس که بخاطر داشتن هاست رایگان هنوز لود نشده"
+                    class="imgchecklist">
+                <p>This code defines a function called remove_silence that takes two file paths as input:
+                    input_file_path,
+                    which
+                    is the
+                    path to the audio file from which the silences will be removed, and output_file_path, which is the
+                    path
+                    where
+                    the
+                    resulting audio file will be saved.
+
+                    The function first loads the audio file using the AudioSegment class from the pydub library. It then
+                    calculates the
+                    average dBFS level of the audio file and sets the silence threshold to this value.
+
+                    The minimum silence length is calculated based on the length of the audio file and set to 5% of its
+                    total
+                    duration. The
+                    detect_nonsilent method from the pydub.silence module is used to split the audio into non-silent
+                    parts
+                    based
+                    on the
+                    silence threshold and minimum silence length.
+
+                    Finally, the function concatenates the non-silent parts of the audio that are longer than the
+                    minimum
+                    silence
+                    length
+                    using the AudioSegment.empty() method and exports the resulting audio to the specified output file
+                    path
+                    in
+                    WAV
+                    format
+                    using the export method.
+
+                    Overall, this code removes silences from an audio file and saves the remaining audio to a new file.
+                </p>
+                <div><a href="https://github.com/rezaanbarsooz79/remove_silence_from_audio" class="content-links"
+                        target="_blank">visite
+                        github</a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>checklist</h2>
+                <h5>The first small project I did was to meet my needs, so I decided to start this project</h5>
+                <img src="12.JPG" alt="اینجا جای ی عکس که بخاطر داشتن هاست رایگان هنوز لود نشده" class="imgchecklist">
+                <p>Since I needed to write my work in a checklist and I am very interested in working with the computer,
+                    I
+                    decided to make
+                    a checklist and later I decided that it should be a web application that can be on my phone and on
+                    the
+                    system.
+                    After it
+                    was made and I saw a lot of interest from people around me to use this web application, I decided to
+                    make a
+                    more
+                    beautiful appearance for it, which took about a day, but in the end it was user-friendly, and now
+                    nearly
+                    ten
+                    of my close
+                    friends are using it. They use the online checklist and I am satisfied. I am also satisfied and
+                    happy
+                    with
+                    this welcome</p>
+                <div class="tryit"><a href="https://checklistereza.netlify.app/" target="_blank"
+                        class="content-links">visite
+                        this site</a></div>
+            </div>
+            <div class="card">
+                <h2>my wbesite</h2>
+                <h5>My first frontend project with html and css</h5>
+                <img src="14.JPG" alt="اینجا جای ی عکس که بخاطر داشتن هاست رایگان هنوز لود نشده" class="imgmywebsite">
+                <p>Recently, in order to get myself more involved in coding and to create a resume and to have some work
+                    samples, I decided
+                    to create my own website or a blog and post content on it, both from my own work and from what the
+                    site
+                    provides for
+                    others. It will be useful because this will also make me code more and I can be daily and post my
+                    work
+                    samples
+                    here.</p>
+            </div>
+        </div>
+        <div><a href="index.html" class="back" target="_self">Back Home</a></div>
+    </div>
+
+</body>
+
+</html>
