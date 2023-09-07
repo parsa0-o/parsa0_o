@@ -3,4 +3,4 @@ setTimeout(() => {
     if (element) {
         element.style.display = 'none';
     }
-}, 5000);
+}, 7000);
