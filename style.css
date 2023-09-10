@@ -89,7 +89,7 @@ h5 {
 .card {
     background-color: #fff;
     margin-top: 20px;
-    padding: 1rem;
+    padding: 5rem;
     text-align: center;
     border-radius: 16px;
     background: #fff;
@@ -124,11 +124,12 @@ h5 {
 .card-description {
     display: flex;
     position: absolute;
+    width: 100%;
     gap: .5em;
     flex-direction: column;
     background-color: #f5f5f5;
     color: #212121;
-    height: 40%;
+    height: 35%;
     bottom: 0;
     border-radius: 16px;
     transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -136,17 +137,17 @@ h5 {
 }
 
 .card-description p {
-    margin-bottom: 15px;
+    margin-bottom: 1px;
 }
 
 .text-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
 .text-body {
     font-size: 1rem;
-    line-height: 130%;
+    line-height: 80%;
 }
 
 .card-about:hover .card-description {
@@ -197,7 +198,7 @@ h5 {
 
 #footer {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     background-color: #f5f5f5;
@@ -251,6 +252,8 @@ h4 {
         width: 250px;
     }
 }
+
+
 
 .rightrcol .card p {
     font-size: 14px;
@@ -662,10 +665,11 @@ h4 {
     border-radius: 10px;
     overflow: hidden;
     margin-left: 20px;
+    width: 80%;
 }
 
 .skill-percent {
-    background-color: #333;
+    background-color: #000;
     height: 100%;
 }
 
@@ -674,7 +678,9 @@ h4 {
     font-size: 16px;
 }
 
-
+#card-link2{
+    display: none;
+}
 .card-link {
     height: fit-content;
     border-radius: 16px;
@@ -689,6 +695,15 @@ h4 {
     padding: 25px 25px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+@media screen and (max-width:1000px) {
+    #card-link1 {
+        display: none;
+    }
+
+    #card-link2 {
+        display: flex;
+    }
 }
 
 .socialContainer {
