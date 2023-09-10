@@ -533,6 +533,10 @@ h5 {
     border-radius: 16px;
 }
 
+.imgchecklist {
+    filter: grayscale(100%);
+}
+
 /* card about */
 .card-about {
     margin-top: 20px;
